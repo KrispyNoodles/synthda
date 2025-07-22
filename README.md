@@ -1,33 +1,35 @@
-# AutoSynthDa, under Project SynthDa  
+ # AutoSynthDa, under Project SynthDa  
 Pose-Level Synthetic Data Augmentation for Action Recognition (Research Purposes Only)  
 =============================================================
-
+  
 #### Licensed under NSCLv2, where users can use this noncommercially (which means research or evaluation purposes only) on NVIDIA Processors.
-
 This project will download and install additional third-party open source software projects. Review the license terms of these open source projects before use.
 
-![image](https://github.com/user-attachments/assets/1fde62ce-67a6-4673-9341-78da4daa31e4)
+![detailed_synthdablog-demo](https://github.com/user-attachments/assets/7ae09f18-2338-4cf2-ae52-fd569f31380a)
+<a href="https://huggingface.co/spaces/nvidia/synthda-demo"><img 
+      src="https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-md-dark.svg" 
+      alt="Open in Spaces" 
+      style="height:20px;" /></a>
+<a href="https://github.com/NVIDIA/synthda/blob/main/colab/brev_demo_generateSynthDa.ipynb"><img 
+    src="https://img.shields.io/badge/Launch-Colab-yellow.svg" 
+    alt="Launch Colab" 
+    style="height:20px;" /></a>
 
-SynthDa (aka AutoSynthDa) is an open-source toolkit that generates class-balanced, kinematically valid video clips by automatically **interpolating human poses** rather than rendering full photorealistic frames. The framework is designed to mitigate the issue of imbalanced datasets by creating synthetic data for minority action classes in action-recognition datasets without the need for additional sensors/modality. This only uses RGB videos to generate synthetic videos.  
+**SynthDa** (aka **AutoSynthDa**) is an open-source toolkit that generates class-balanced, kinematically valid video clips by automatically **interpolating human poses** rather than rendering full photorealistic frames. The framework is designed to mitigate the issue of imbalanced datasets by creating synthetic data for minority action classes in action-recognition datasets without the need for additional sensors/modality. This only uses RGB videos to generate synthetic videos.  
 
 Each component of our proposed framework can be swapped with models of your choice or components of your choice. For the augmentation optimization loop, we have used [action recognition net](https://github.com/NVIDIA/tao_tutorials/tree/main/notebooks/tao_launcher_starter_kit/action_recognition_net) from NVIDIA TAO Toolkit. We provided each of the components to be used individually or stringed together/automated for your specific use case. Our purpose is to enable improved synthetic data generation for human actions.
 
+![image](https://github.com/user-attachments/assets/1fde62ce-67a6-4673-9341-78da4daa31e4)
+
 ### See our wiki pages for the full [set up instructions](https://github.com/NVIDIA/synthda/wiki/1.-Setting-Up-SynthDa) and [customization options](https://github.com/NVIDIA/synthda/wiki/2.-Customizing-SynthDa)
-
-### See our Hugging Face Demo 
-[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-md-dark.svg)](https://huggingface.co/spaces/nvidia/synthda-demo)
-
-### Try our Google Colab Demo to generate a sample synthetic video   
-[![Launch Colab](https://img.shields.io/badge/Launch-Colab-yellow.svg)](https://github.com/NVIDIA/synthda/blob/main/colab/brev_demo_generateSynthDa.ipynb)
 
 ---
 
-Project By:  
-Megani Rajendran (NVIDIA), Chek Tien Tan (SIT), Aik Beng Ng (NVIDIA),  
-Indriyati Atmosukarto (SIT), Joey Lim Jun Feng (SIT), Triston Chan Sheen (SIT), Simon See (NVIDIA)  
-An NVAITC APS project (NVIDIA).  
-Co-supervised by Singapore Institute of Technology, a collaboration between NVAITC-APS and Singapore Institute of Technology  
-Special thanks: Andrew Grant (NVIDIA)
+**Project By:**  Megani Rajendran (NVIDIA), Chek Tien Tan (SIT), Aik Beng Ng (NVIDIA), Indriyati Atmosukarto (SIT), Joey Lim Jun Feng (SIT), Triston Chan Sheen (SIT), Simon See (NVIDIA)  
+
+An NVAITC APS project (NVIDIA). Co-supervised by Singapore Institute of Technology, a collaboration between NVAITC-APS and Singapore Institute of Technology  
+
+**Special thanks:** Andrew Grant (NVIDIA)
 
 ---
 

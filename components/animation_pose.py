@@ -44,7 +44,7 @@ def import_ply_files(directory):
 
                 imported_obj.location.z += 1
                 
-                # older blender versions (comment this out to import)
+                # For Blender versions earlier than 3.0.1, use the following line to import PLY files:
                 # bpy.ops.wm.ply_import(filepath=file_path, forward_axis='Z', up_axis='Y')
 
             except RuntimeError as err:
